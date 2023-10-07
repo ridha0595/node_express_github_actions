@@ -12,7 +12,7 @@ app.use(express.static("views"));
 
 //http://localhost:3000/
 app.get('/', function (req, res) {
-    res.send("<h1>Home Page</h1>")
+    res.sendFile("./views/index.html")
 })
 
 //http://localhost:3000/profile
